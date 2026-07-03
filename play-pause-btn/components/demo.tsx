@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "motion/react";
-import { cn } from "@/utlis/utils";
+import { cn } from "@/lib/utils";
 
 // Original constants - preserved as requested
 const PAUSE = {
@@ -68,9 +68,9 @@ const PlayPauseButton = ({ theme = "light" }: PlayPauseButtonProps) => {
 
 const Demo = () => {
   return (
-    <div className="font-sans h-screen mesh-gradient text-white p-6 md:p-12 flex flex-col items-center justify-center gap-12 md:gap-16 overflow-x-hidden selection:bg-white/30">
+    <div className="font-sans  mesh-gradient text-white p-6 md:p-12 flex flex-col items-center justify-center gap-12 md:gap-16 overflow-x-hidden selection:bg-white/30">
       {/* Main Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl animate-in fade-in zoom-in-95 duration-1000 delay-200">
+      <div className="grid grid-cols-1 gap-8 w-full max-w-5xl animate-in fade-in zoom-in-95 duration-1000 delay-200">
         {/* Light Context Card */}
         <div className="relative h-[400px] rounded-[2rem] overflow-hidden group/card shadow-2xl shadow-black/10">
           <img
